@@ -1,9 +1,9 @@
 ---
 title: "data viz project"
 output: 
-  html_document:
-    keep_md: TRUE
-    code_folding: hide
+  rmarkdown::github_document
+    # keep_md: TRUE
+    # code_folding: hide
 ---
 
 ```{r setup, include=FALSE} 
@@ -19,15 +19,15 @@ sm <- c('foul_tip','swinging_strike')
 img <- readPNG('square.png')
 
 #rays 
-jm20all <- read_csv('ji-man20_all_pitches.csv')
+jm20all <- read_csv('data/ji-man20_all_pitches.csv')
 
-tg20all <- read.csv('glasnow_all_pitches.csv')
+tg20all <- read.csv('data/glasnow_all_pitches.csv')
 
 
 #dodgers 
-mb20all <- read_csv('betts_all_pitches.csv')
+mb20all <- read_csv('data/betts_all_pitches.csv')
 
-wb20all <- read_csv('buehler_all_pitches.csv')
+wb20all <- read_csv('data/buehler_all_pitches.csv')
 
 
 #####
